@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: white;
+        /* display: flex;
+        justify-content: center;
+        align-items: start; */
+        min-height: 100vh;
+      }
+      .container1 {
+        background-color: rgb(253, 230, 213);
+        width: 650px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 30px;
+        margin-top: 30px;
+        height: 360px;
+      }
+      input {
+        background-color: rgb(253, 230, 213);
+        width: 650px;
+        border-radius: 10px;
+      }
+      .container2 {
+        background-color: rgb(253, 230, 213);
+        width: 650px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 740px;
+        margin-top: -400px;
+        height: 120px;
+      }
+      .container3 {
+        background-color: rgb(253, 230, 213);
+        width: 650px;
+        border-radius: 10px;
+        padding: 20px;
+        margin-left: 740px;
+        margin-top: 20px;
+        height: 180px;
+      }
+      .title {
+        background-color: #43281c;
+        color: rgb(232, 214, 171);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* gap: 10px; */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 0px;
+        font-size: 15px;
+      }
+      .logo {
+        display: flex;
+        align-items: start;
+        width: 25px;
+        padding: 10px;
+        margin-left: 600px;
+      }
+      .item1 {
+        display: flex;
+        justify-content: space-between;
+        /* margin: 10px 0px; */
+      }
+      .cap {
+        margin-right: 400px;
+      }
+      .capu {
+        margin-right: 320px;
+      }
+      .capuc {
+        margin-right: 410px;
+      }
+      hr {
+        border-top: rgb(228, 196, 152);
+        border-left: rgb(228, 196, 152);
+        color: rgb(228, 196, 152);
+        background-color: rgb(228, 196, 152);
+        height: 2px;
+      }
+      table {
+        width: 60%;
+        margin-left: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        line-height: 3;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .button {
+        background-color: rgb(219, 185, 149);
+        width: 95%;
+        margin-left: 35px;
+        height: 40px;
+        border-radius: 50px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        color: black;
+        border: 0;
+      }
+      .button:hover {
+        background-color: rgb(234, 140, 17);
+      }
+      input {
+        background-color: rgb(253, 230, 213);
+        border-color: rgb(219, 185, 149);
+      }
+
+      .fieldset {
+        color: #43281c;
+      }
+      .legend {
+        color: #976546;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+      }
+      .p {
+        color: #976546;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .black {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <img class="logo" src="coffee_masters_logo.png" alt="logo" />
+      <h1>Coffee Masters</h1>
+    </div>
+    <div class="container1">
+      <p>ITEMS</p>
+      <div class="item1">
+        <p class="black">1x</p>
+        <p class="cap">
+          <strong style="color: black">Cappucino</strong><br />Light Foam
+        </p>
+        <h3>$6.00</h3>
+      </div>
+      <hr />
+      <div class="item1">
+        <p class="black">1x</p>
+        <p class="capu">
+          <strong style="color: black">Cappucino</strong><br />Almond Milk<br />Double
+          Espresso Shot
+        </p>
+        <h3>$7.90</h3>
+      </div>
+      <hr />
+      <div class="item1">
+        <p class="black">1x</p>
+        <p class="capuc">
+          <strong style="color: black">Croissant</strong><br />Butter
+        </p>
+        <h3>$5.37</h3>
+      </div>
+    </div>
+    <div class="container2">
+      <p>NAME</p>
+      <fieldset style="border-radius: 50px">
+        <legend>Name for order</legend>
+        <input type="text" id="card" placeholder="" />
+        <!-- <form><imput placeholder="Name for order"></imput></form> -->
+      </fieldset>
+    </div>
+    <div class="container3">
+      <p>PAYMENT</p>
+      <fieldset style="border-radius: 50px">
+        <legend>Card number</legend>
+        <input type="text" id="card" placeholder="" />
+        <!-- <form><imput placeholder="Card number"></imput></form> -->
+      </fieldset>
+      <fieldset style="border-radius: 50px">
+        <legend>CCV number</legend>
+        <input type="text" id="card" placeholder="" />
+        <!-- <form><imput placeholder="CCCV number"></imput></form> -->
+      </fieldset>
+    </div>
+    <table>
+      <tr>
+        <td>Subtotal:</td>
+        <td>$19.27</td>
+      </tr>
+      <tr>
+        <td>Tax:</td>
+        <td>$0.96</td>
+      </tr>
+      <tr>
+        <td><strong>Total:</strong></td>
+        <td><strong>$20.23</strong></td>
+      </tr>
+    </table>
+    <button class="button">Place order</button>
+  </body>
+</html>
